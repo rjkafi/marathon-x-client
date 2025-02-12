@@ -46,6 +46,24 @@ const Header = () => {
                     Dashboard
                 </NavLink>
             </li>
+            <li>
+                <NavLink to="/about" className={({ isActive }) =>
+                    isActive
+                        ? "text-orange-500 border-b-2 border-orange-500 bg-transparent"
+                        : "text-gray-700 hover:border-b-2 hover:border-orange-500 bg-transparent"
+                }>
+                    About
+                </NavLink>
+            </li>
+            <li>
+                <NavLink to="/services" className={({ isActive }) =>
+                    isActive
+                        ? "text-orange-500 border-b-2 border-orange-500 bg-transparent"
+                        : "text-gray-700 hover:border-b-2 hover:border-orange-500 bg-transparent"
+                }>
+                    Services
+                </NavLink>
+            </li>
         </>
     ) : (
         <>
