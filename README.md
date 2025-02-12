@@ -1,6 +1,6 @@
 # Marathon-X Website
 
-**Live Site URL**: [Visit Marathon Management System](https://marathon-x.web.app/)
+**Live Site URL**: [Visit Marathon-X Web_app](https://marathon-x.web.app/)
 
 ## Features
 
