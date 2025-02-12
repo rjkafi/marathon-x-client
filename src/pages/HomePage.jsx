@@ -14,10 +14,10 @@ const HomePage = () => {
             <Banner></Banner>
             {/* dynamic fatch to server 6 marathon */}
             <div className="bg-base-100">
-               
+
                 {/* Previous  section */}
                 <div>
-                <MarathonsCard></MarathonsCard>
+                    <MarathonsCard></MarathonsCard>
                     <div className="py-10">
                         <div className="container mx-auto px-4">
                             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
@@ -164,24 +164,23 @@ const HomePage = () => {
                             </div>
                         </div>
                     </section>
-                    <section className=" py-10">
+                    <section className="py-10">
                         <div className="container mx-auto px-4">
                             {/* Section Header */}
                             <div>
-                                <h2 className="text-2xl md:text-3xl font-bold  mb-8">Our Blogs</h2>
+                                <h2 className="text-2xl md:text-3xl font-bold mb-8">Our Blogs</h2>
                             </div>
 
                             {/* Blog Layout */}
                             <div className="flex flex-col lg:flex-row gap-8">
                                 {/* Left Featured Blog */}
                                 <div className="w-full lg:w-2/3">
-                                    <div className="relative">
+                                    <div className="relative flex h-full">
                                         <img
                                             src="https://i.ibb.co.com/fCWc9MR/marathon-7009273-1280.jpg"
                                             alt="Blog Cover"
-                                            className="rounded-lg w-full object-cover"
+                                            className="rounded-lg w-full object-cover h-full"
                                         />
-
                                     </div>
                                 </div>
 
@@ -206,7 +205,6 @@ const HomePage = () => {
                                             <p className="text-sm text-gray-500 mt-1">
                                                 by Rae Lil &mdash; Oct 12, 2023
                                             </p>
-
                                         </div>
                                     </div>
 
@@ -228,9 +226,9 @@ const HomePage = () => {
                                             <p className="text-sm text-gray-500 mt-1">
                                                 by Michale Chen &mdash; Oct 12, 2023
                                             </p>
-
                                         </div>
                                     </div>
+
                                     <div className="flex gap-4">
                                         {/* Blog Image */}
                                         <img
@@ -252,7 +250,6 @@ const HomePage = () => {
                                         </div>
                                     </div>
 
-
                                     <div className="flex gap-4">
                                         {/* Blog Image */}
                                         <img
@@ -271,13 +268,107 @@ const HomePage = () => {
                                             <p className="text-sm text-gray-500 mt-1">
                                                 by Maverick Nguyen &mdash; Oct 12, 2023
                                             </p>
+                                        </div>
+                                    </div>
 
+                                    {/* Additional Blogs */}
+                                    <div className="flex gap-4">
+                                        <img
+                                            src="https://i.ibb.co.com/pr1xPNJT/f18f437581de15bb77eaecff85a00e43.jpg"
+                                            alt="Marathon Nutrition"
+                                            className="w-24 h-24 object-cover rounded-lg"
+                                        />
+                                        <div>
+                                            <span className="bg-blue-600 text-xs uppercase px-2 py-1 rounded-sm text-white">
+                                                Nutrition
+                                            </span>
+                                            <h4 className="text-lg font-bold mt-2">
+                                                Marathon Nutrition: Fuel Your Body for the Big Race
+                                            </h4>
+                                            <p className="text-sm text-gray-500 mt-1">
+                                                by Jamie Lee &mdash; Oct 15, 2023
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex gap-4">
+                                        <img
+                                            src="https://i.ibb.co.com/FqJQJKF7/Improve-Your-Marathon-Time-634x1024.jpg"
+                                            alt="Training Tips"
+                                            className="w-24 h-24 object-cover rounded-lg"
+                                        />
+                                        <div>
+                                            <span className="bg-red-600 text-xs uppercase px-2 py-1 rounded-sm text-white">
+                                                Training
+                                            </span>
+                                            <h4 className="text-lg font-bold mt-2">
+                                                Training Tips for First-Time Marathoners
+                                            </h4>
+                                            <p className="text-sm text-gray-500 mt-1">
+                                                by Sarah Johnson &mdash; Oct 18, 2023
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <img
+                                            src="https://i.ibb.co.com/PG5L0BKY/maxresdefault.jpg"
+                                            alt="Marathon Recovery"
+                                            className="w-24 h-24 object-cover rounded-lg"
+                                        />
+                                        <div>
+                                            <span className="bg-yellow-600 text-xs uppercase px-2 py-1 rounded-sm text-white">
+                                                Recovery
+                                            </span>
+                                            <h4 className="text-lg font-bold mt-2">
+                                                Marathon Recovery: How to Get Back on Track After the Race
+                                            </h4>
+                                            <p className="text-sm text-gray-500 mt-1">
+                                                by Michael Adams &mdash; Oct 20, 2023
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex gap-4">
+                                        <img
+                                            src="https://i.ibb.co.com/sGgtpMp/th-12.jpg"
+                                            alt="Nutrition Tips"
+                                            className="w-24 h-24 object-cover rounded-lg"
+                                        />
+                                        <div>
+                                            <span className="bg-blue-600 text-xs uppercase px-2 py-1 rounded-sm text-white">
+                                                Nutrition
+                                            </span>
+                                            <h4 className="text-lg font-bold mt-2">
+                                                Essential Nutrition Tips for Marathon Runners
+                                            </h4>
+                                            <p className="text-sm text-gray-500 mt-1">
+                                                by Emma Stone &mdash; Oct 22, 2023
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div className="flex gap-4">
+                                        <img
+                                            src="https://i.ibb.co.com/q3QxcTvD/th-13.jpg"
+                                            alt="Gear Guide"
+                                            className="w-24 h-24 object-cover rounded-lg"
+                                        />
+                                        <div>
+                                            <span className="bg-red-600 text-xs uppercase px-2 py-1 rounded-sm text-white">
+                                                Gear
+                                            </span>
+                                            <h4 className="text-lg font-bold mt-2">
+                                                The Ultimate Gear Guide for Marathon Runners
+                                            </h4>
+                                            <p className="text-sm text-gray-500 mt-1">
+                                                by John Doe &mdash; Oct 23, 2023
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
+
                 </div>
             </div>
         </>

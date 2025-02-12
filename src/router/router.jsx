@@ -12,6 +12,7 @@ import SignIn from "../pages/SignIn";
 import Marathons from "../pages/Marathons";
 import PrivateRoute from "./PrivateRoute";
 import About from "../pages/About";
+import Services from "../pages/Services";
 
 
 
@@ -47,6 +48,9 @@ const router=createBrowserRouter([
             },{
                 path:'about',
                 element:<About></About>
+            },{
+                path:"services",
+                element:<Services></Services>
             }
 
         ]
