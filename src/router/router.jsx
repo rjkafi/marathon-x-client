@@ -11,6 +11,7 @@ import MarathonDetails from "../pages/MarathonDetails";
 import SignIn from "../pages/SignIn";
 import Marathons from "../pages/Marathons";
 import PrivateRoute from "./PrivateRoute";
+import About from "../pages/About";
 
 
 
@@ -43,6 +44,9 @@ const router=createBrowserRouter([
                     <MarathonDetails></MarathonDetails>
                 </PrivateRoute>,
                 loader: ({ params }) => fetch(`https://marathon-x-server.vercel.app/marathon/${params.id}`)
+            },{
+                path:'about',
+                element:<About></About>
             }
 
         ]
