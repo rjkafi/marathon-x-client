@@ -3,7 +3,7 @@ import MarathonsCard from "../components/MarathonsCard";
 import Banner from "../components/Banner";
 import { FaRegCalendarCheck } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
-
+import { motion } from "framer-motion";
 
 const HomePage = () => {
     return (
@@ -113,22 +113,32 @@ const HomePage = () => {
                             <div className="flex flex-col lg:flex-row items-center">
                                 {/* Left Cards */}
                                 <div className="flex flex-col gap-6 lg:gap-12 w-full lg:w-1/3">
-                                    <div className="text-right">
+                                    <motion.div
+                                        className="text-right"
+                                        initial={{ opacity: 0, x: -100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         <h3 className="text-orange-700 text-3xl font-bold">01</h3>
                                         <h4 className="text-xl font-semibold mt-2">Be Healthy</h4>
                                         <p className=" mt-2">
                                             Improve your physical fitness and well-being through regular
                                             running.
                                         </p>
-                                    </div>
-                                    <div className="text-right">
+                                    </motion.div>
+                                    <motion.div
+                                        className="text-right"
+                                        initial={{ opacity: 0, x: -100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         <h3 className="text-orange-700 text-3xl font-bold">02</h3>
                                         <h4 className="text-xl font-semibold mt-2">Feel Free</h4>
                                         <p className=" mt-2">
                                             Experience the freedom of running outdoors, and challenging
                                             yourself.
                                         </p>
-                                    </div>
+                                    </motion.div>
                                 </div>
 
                                 {/* Central Circular Image */}
@@ -145,21 +155,31 @@ const HomePage = () => {
 
                                 {/* Right Cards */}
                                 <div className="flex flex-col gap-6 lg:gap-12 w-full lg:w-1/3">
-                                    <div className="text-left">
+                                    <motion.div
+                                        className="text-left"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         <h3 className="text-orange-700 text-3xl font-bold">03</h3>
                                         <h4 className="text-xl font-semibold mt-2">Be One Of Us</h4>
                                         <p className=" mt-2">
                                             Join a supportive community of like-minded runners and achieving
                                             goals together.
                                         </p>
-                                    </div>
-                                    <div className="text-left">
+                                    </motion.div>
+                                    <motion.div
+                                        className="text-left"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         <h3 className="text-orange-700 text-3xl font-bold">04</h3>
                                         <h4 className="text-xl font-semibold mt-2">Be Strong</h4>
                                         <p className=" mt-2">
                                             Build resilience and mental toughness as you push your limits.
                                         </p>
-                                    </div>
+                                    </motion.div>
                                 </div>
                             </div>
                         </div>
@@ -187,7 +207,12 @@ const HomePage = () => {
                                 {/* Right Smaller Blogs */}
                                 <div className="w-full lg:w-1/3 flex flex-col gap-6">
                                     {/* Static Blog Items */}
-                                    <div className="flex gap-4">
+                                    <motion.div
+                                        className="flex gap-4"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 1.2, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }} >
                                         {/* Blog Image */}
                                         <img
                                             src="https://i.ibb.co.com/98nbg6j/running-6759123-1280.jpg"
@@ -206,9 +231,14 @@ const HomePage = () => {
                                                 by Rae Lil &mdash; Oct 12, 2023
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div className="flex gap-4">
+                                    <motion.div
+                                        className="flex gap-4"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration:1.4, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         {/* Blog Image */}
                                         <img
                                             src="https://i.ibb.co.com/hyG4QdR/race-5324594-1280.jpg"
@@ -227,9 +257,14 @@ const HomePage = () => {
                                                 by Michale Chen &mdash; Oct 12, 2023
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div className="flex gap-4">
+                                    <motion.div
+                                        className="flex gap-4"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         {/* Blog Image */}
                                         <img
                                             src="https://i.ibb.co.com/cYN3vBh/marathon-3436374-1280.jpg"
@@ -248,9 +283,14 @@ const HomePage = () => {
                                                 by Alex Taylor &mdash; Oct 13, 2023
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div className="flex gap-4">
+                                    <motion.div
+                                        className="flex gap-4"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         {/* Blog Image */}
                                         <img
                                             src="https://i.ibb.co.com/NCx12KK/race-932254-1280-1.jpg"
@@ -269,10 +309,15 @@ const HomePage = () => {
                                                 by Maverick Nguyen &mdash; Oct 12, 2023
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
                                     {/* Additional Blogs */}
-                                    <div className="flex gap-4">
+                                    <motion.div
+                                        className="flex gap-4"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         <img
                                             src="https://i.ibb.co.com/pr1xPNJT/f18f437581de15bb77eaecff85a00e43.jpg"
                                             alt="Marathon Nutrition"
@@ -289,9 +334,14 @@ const HomePage = () => {
                                                 by Jamie Lee &mdash; Oct 15, 2023
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div className="flex gap-4">
+                                    <motion.div
+                                        className="flex gap-4"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         <img
                                             src="https://i.ibb.co.com/FqJQJKF7/Improve-Your-Marathon-Time-634x1024.jpg"
                                             alt="Training Tips"
@@ -308,8 +358,13 @@ const HomePage = () => {
                                                 by Sarah Johnson &mdash; Oct 18, 2023
                                             </p>
                                         </div>
-                                    </div>
-                                    <div className="flex gap-4">
+                                    </motion.div>
+                                    <motion.div
+                                        className="flex gap-4"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         <img
                                             src="https://i.ibb.co.com/PG5L0BKY/maxresdefault.jpg"
                                             alt="Marathon Recovery"
@@ -326,8 +381,13 @@ const HomePage = () => {
                                                 by Michael Adams &mdash; Oct 20, 2023
                                             </p>
                                         </div>
-                                    </div>
-                                    <div className="flex gap-4">
+                                    </motion.div>
+                                    <motion.div
+                                        className="flex gap-4"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         <img
                                             src="https://i.ibb.co.com/sGgtpMp/th-12.jpg"
                                             alt="Nutrition Tips"
@@ -344,9 +404,14 @@ const HomePage = () => {
                                                 by Emma Stone &mdash; Oct 22, 2023
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
 
-                                    <div className="flex gap-4">
+                                    <motion.div
+                                        className="flex gap-4"
+                                        initial={{ opacity: 0, x: 100 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        viewport={{ once: true, amount: 0.5 }}>
                                         <img
                                             src="https://i.ibb.co.com/q3QxcTvD/th-13.jpg"
                                             alt="Gear Guide"
@@ -363,7 +428,7 @@ const HomePage = () => {
                                                 by John Doe &mdash; Oct 23, 2023
                                             </p>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
                             </div>
                         </div>
