@@ -159,7 +159,7 @@ const HomePage = () => {
                                         className="text-left"
                                         initial={{ opacity: 0, x: 100 }}
                                         whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ duration: 0.8, ease: "easeOut" }}
+                                        transition={{ duration: 1.5, ease: "easeOut" }}
                                         viewport={{ once: true, amount: 0.5 }}>
                                         <h3 className="text-orange-700 text-3xl font-bold">03</h3>
                                         <h4 className="text-xl font-semibold mt-2">Be One Of Us</h4>
@@ -173,7 +173,7 @@ const HomePage = () => {
                                         initial={{ opacity: 0, x: 100 }}
                                         whileInView={{ opacity: 1, x: 0 }}
                                         transition={{ duration: 0.8, ease: "easeOut" }}
-                                        viewport={{ once: true, amount: 0.5 }}>
+                                        viewport={{ once: true, amount: 0.6 }}>
                                         <h3 className="text-orange-700 text-3xl font-bold">04</h3>
                                         <h4 className="text-xl font-semibold mt-2">Be Strong</h4>
                                         <p className=" mt-2">
