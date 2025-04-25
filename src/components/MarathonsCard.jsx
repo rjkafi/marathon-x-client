@@ -30,7 +30,7 @@ const MarathonsCard = () => {
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 p-2">
                     {marathons.map((marathon) => (
-                        <div key={marathon._id} className="card bg-base-100 shadow-xl p-4 text-center rounded-lg">
+                        <div key={marathon._id} className="card bg-base-100 shadow-xl p-4 text-center rounded-lg hover:shadow-lg transition duration-300 transform hover:-translate-y-2">
                             <motion.div
                                 initial={{ opacity: 0, scale: 0.5 }}
                                 animate={{ opacity: 1, scale: 1 }}
