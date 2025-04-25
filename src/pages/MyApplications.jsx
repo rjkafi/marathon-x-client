@@ -133,7 +133,7 @@ const MyApplications = () => {
               ))
             ) : (
               <tr>
-                <td colSpan="6" className="text-center">
+                <td colSpan="6" className="text-center py-16">
                   No registrations found.
                 </td>
               </tr>

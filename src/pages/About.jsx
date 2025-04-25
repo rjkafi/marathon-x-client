@@ -1,12 +1,23 @@
+import { motion } from "framer-motion";
+
 const About = () => {
     return (
-        <div className="max-w-4xl mx-auto p-6 text-center">
+        <div className="container mx-auto p-6 text-center">
             <h1 className="text-4xl font-bold text-red-600 mb-4">About Us</h1>
-            <p className="text-lg mb-6">
-                Welcome to the ultimate test of endurance and spirit! Our marathon is dedicated to bringing together runners
-                from all walks of life to challenge themselves and achieve greatness. Whether you're a seasoned athlete
-                or a first-time participant, our event is designed to inspire and motivate you.
-            </p>
+            <div className="md:flex justify-between gap-8">
+                <motion.img 
+                 animate={{ x: 10 }}
+                 transition={{ type: "spring", stiffness: 100 }}
+                src="https://i.ibb.co/mrzbg8rF/download-2.jpg"
+                    className="w-full rounded-md"
+                    alt="Ouer Team" />
+                <motion.p animate={{ y: 20 }}
+                 transition={{ type: "spring", stiffness: 100 }} className="text-lg mb-6 ">
+                    Welcome to the ultimate test of endurance and spirit! Our marathon is dedicated to bringing together runners
+                    from all walks of life to challenge themselves and achieve greatness. Whether you're a seasoned athlete
+                    or a first-time participant, our event is designed to inspire and motivate you.
+                </motion.p>
+            </div>
             <h2 className="text-2xl font-semibold  mb-3">Our Mission</h2>
             <p className="mb-6">
                 We believe in promoting fitness, community, and perseverance through marathon running. Our goal is to

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const MarathonsCard = () => {
     const [marathons, setMarathons] = useState([]);
@@ -30,7 +31,10 @@ const MarathonsCard = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 p-2">
                     {marathons.map((marathon) => (
                         <div key={marathon._id} className="card bg-base-100 shadow-xl p-4 text-center rounded-lg">
-                            <div className="card-body">
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.5 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.5 }} className="card-body">
                                 <h3 className="text-xl font-semibold mb-3">{marathon.title}</h3>
                                 <p className="text-gray-600">Location: {marathon.location}</p>
                                 <p className="text-gray-600">
@@ -44,7 +48,7 @@ const MarathonsCard = () => {
                                         View Details
                                     </button>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     ))}
                 </div>

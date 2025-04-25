@@ -57,7 +57,7 @@ const SignIn = () => {
                 const user = result.user;
                 Swal.fire({
                     title: "Welcome Back!",
-                    text: `Hello, ${user.displayName || "User"}! You are now logged in.`,
+                    text: `Hello, ${user.displayName || "user"}! You are now logged in.`,
                     icon: "success",
                     confirmButtonText: "OK",
                 });

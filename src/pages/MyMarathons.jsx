@@ -84,30 +84,39 @@ const MyMarathons = () => {
           </tr>
         </thead>
         <tbody>
-          {marathons.map((marathon) => (
-            <tr key={marathon._id} className="border-b">
-              <td className="py-2 px-4">{marathon.title}</td>
-              <td className="py-2 px-4">{marathon.location}</td>
-              <td className="py-2 px-4">
-                {new Date(marathon.startRegDate).toLocaleDateString()} -{" "}
-                {new Date(marathon.endRegDate).toLocaleDateString()}
-              </td>
-              <td className="py-2 px-4 text-center">
-                <button
-                  onClick={() => handleUpdateClick(marathon)}
-                  className="text-blue-500 hover:underline mx-2"
-                >
-                  Update
-                </button>
-                <button
-                  onClick={() => handleDeleteClick(marathon)}
-                  className="text-red-500 hover:underline mx-2"
-                >
-                  Delete
-                </button>
-              </td>
-            </tr>
-          ))}
+          { marathons.length > 0 ? (
+             marathons.map((marathon) => (
+              <tr key={marathon._id} className="border-b">
+                <td className="py-2 px-4">{marathon.title}</td>
+                <td className="py-2 px-4">{marathon.location}</td>
+                <td className="py-2 px-4">
+                  {new Date(marathon.startRegDate).toLocaleDateString()} -{" "}
+                  {new Date(marathon.endRegDate).toLocaleDateString()}
+                </td>
+                <td className="py-2 px-4 text-center">
+                  <button
+                    onClick={() => handleUpdateClick(marathon)}
+                    className="text-blue-500 hover:underline mx-2"
+                  >
+                    Update
+                  </button>
+                  <button
+                    onClick={() => handleDeleteClick(marathon)}
+                    className="text-red-500 hover:underline mx-2"
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            ))
+          ): (
+            <tr >
+            <td colSpan="6" className="text-center py-20">
+              No marathon found.
+            </td>
+          </tr>
+          )}
+         
         </tbody>
       </table>
 
