@@ -1,6 +1,8 @@
 # Marathon-X Website
 
-**Live Site URL**: [Visit Marathon Management System](https://marathon-x.web.app/)
+**Live Site URL**: [Visit Marathon-X Web_app](https://marathon-x.web.app/)
+
+A dynamic marathon management system offering a user-friendly dashboard to manage events, registrations, and participation. Features include secure authentication, responsive design, CRUD operations, and personalized dark/light theme modes.
 
 ## Features
 
